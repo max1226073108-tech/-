@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Будущий миллиардер</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    background:#111;
+    color:white;
+}
+
+.hero{
+    height:100vh;
+    background:
+    linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+    url('https://images.unsplash.com/photo-1526304640581-d334cdbbf45e?q=80&w=2000');
+    background-size:cover;
+    background-position:center;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+}
+
+.hero h1{
+    font-size:70px;
+    color:#ffd700;
+    text-shadow:0 0 20px #ffd700;
+    margin-bottom:20px;
+}
+
+.hero p{
+    font-size:22px;
+    margin-bottom:35px;
+}
+
+.btn{
+    padding:18px 40px;
+    background:#ffd700;
+    color:black;
+    text-decoration:none;
+    font-size:22px;
+    font-weight:bold;
+    border-radius:50px;
+    transition:0.3s;
+}
+
+.btn:hover{
+    transform:scale(1.08);
+    box-shadow:0 0 25px #ffd700;
+}
+
+.books{
+    padding:80px 10%;
+}
+
+.books h2{
+    text-align:center;
+    color:#ffd700;
+    font-size:45px;
+    margin-bottom:50px;
+}
+
+.book-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:25px;
+}
+
+.book{
+    background:#1a1a1a;
+    border:2px solid #ffd700;
+    border-radius:15px;
+    padding:25px;
+    transition:0.3s;
+}
+
+.book:hover{
+    transform:translateY(-8px);
+    box-shadow:0 0 20px rgba(255,215,0,0.5);
+}
+
+.book h3{
+    color:#ffd700;
+    margin-bottom:15px;
+}
+
+.footer{
+    text-align:center;
+    padding:30px;
+    background:black;
+    color:#999;
+}
+</style>
+</head>
+<body>
+
+<section class="hero">
+    <h1>Будущий миллиардер</h1>
+    <p>Твоё финансовое будущее начинается сегодня</p>
+    <a href="#books" class="btn">Как стать богатым</a>
+</section>
+
+<section id="books" class="books">
+    <h2>Топ книг для будущего миллионера</h2>
+
+    <div class="book-grid">
+
+        <div class="book">
+            <h3>Богатый папа, бедный папа</h3>
+            <p>
+                Роберт Кийосаки объясняет основы финансовой грамотности,
+                инвестиций и создания активов.
+            </p>
+        </div>
+
+        <div class="book">
+            <h3>Самый богатый человек в Вавилоне</h3>
+            <p>
+                Простые и вечные правила обращения с деньгами через
+                интересные истории.
+            </p>
+        </div>
+
+        <div class="book">
+            <h3>Думай и богатей</h3>
+            <p>
+                Наполеон Хилл изучил привычки самых успешных людей и
+                собрал их принципы успеха.
+            </p>
+        </div>
+
+        <div class="book">
+            <h3>Психология денег</h3>
+            <p>
+                Морган Хаузел рассказывает, почему богатство зависит
+                не только от знаний, но и от поведения.
+            </p>
+        </div>
+
+        <div class="book">
+            <h3>48 законов власти</h3>
+            <p>
+                Книга о влиянии, лидерстве и стратегическом мышлении.
+            </p>
+        </div>
+
+        <div class="book">
+            <h3>Атомные привычки</h3>
+            <p>
+                Как маленькие ежедневные действия приводят к большим
+                результатам в жизни и бизнесе.
+            </p>
+        </div>
+
+    </div>
+</section>
+
+<div class="footer">
+    © 2025 Будущий миллиардер | Никогда не переставай учиться
+</div>
+
+</body>
+</html>
